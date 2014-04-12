@@ -1,0 +1,10 @@
+<resource>
+  <its:rules version="2.0" xmlns:its="http://www.w3.org/2005/11/its">
+    <!-- Test correct XPath context for relative selectors using idValue,
+    which uses an XPath that evaluates to a string. -->
+    <its:idValueRule idValue="concat('par_', position(), '_of_', last())" selector="//par"/>
+  </its:rules>
+  <par title="paragraph 1">Nothing interesting here!</par>
+  <par title="paragraph 2">Nothing interesting here, either!</par>
+  <par title="paragraph 3">Still nothing!</par>
+</resource>

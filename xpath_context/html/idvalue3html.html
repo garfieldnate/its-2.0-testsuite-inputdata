@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script type="application/its+xml">
+  <its:rules xmlns:its="http://www.w3.org/2005/11/its" xmlns:h="http://www.w3.org/1999/xhtml"  version="2.0">
+    <!-- Test correct XPath context for relative selectors using idValue,
+    which uses an XPath that evaluates to a string. -->
+    <its:idValueRule idValue="concat('par_', position(), '_of_', last())" selector="//p"/>
+  </its:rules>
+  </script>
+  <meta charset=utf-8>
+  <title>XPath Context</title>
+</head>
+<body>
+ <p title="paragraph 1">Nothing here!<p>
+ <p title="paragraph 2">Nothing here, either!<p>
+ <p title="paragraph 3">Still nothing!<p>
+</body>
+</html>
